@@ -1,4 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { AppProvider } from './context/AppContext';
 import AppRoutes from './routes';
 
@@ -8,6 +9,7 @@ export default function App() {
       <AppProvider>
         <AppRoutes />
       </AppProvider>
+      <SpeedInsights />
     </BrowserRouter>
   );
 }
